@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+a:focus,
+a:hover{
+    color: red;
+    outline: 0.15rem solid #000;
+    outline-offset: 0.15rem;
+}
+button:focus{
+    outline: 0.15rem solid #000;
+    outline-offset: 0.15rem;
+}
+form input:focus{
+    outline: 0.15rem solid #000;
+    outline-offset: 0.15rem;
+}
+header{
+    padding: 1.5rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0f0f0;
+    text-align: center;
+}
+section{
+    margin: 1.5rem;
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    background-color: #a9f9f9;
+}
+table, th, td{
+    border: 0.15rem solid black;
+    padding: 0.2rem;
+    background-color: aquamarine;
+}
+table{
+    border-collapse: collapse;;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 25rem;
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #d0f0f0;
+}
+@media(max-width: 600px){
+    header, section, footer{
+        padding: 0.5rem;
+    }
+    table, th, td{
+        font-size: 0.9rem;
+    }
+}
